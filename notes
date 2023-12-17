@@ -1,0 +1,27 @@
+1. Session :
+A session is used to save information on the server momentarily so that it may be utilized across various pages of the website. It is the overall amount of time spent on an activity. The user session begins when the user logs in to a specific network application and ends when the user logs out of the program or shuts down the machine.
+
+Session values are far more secure since they are saved in binary or encrypted form and can only be decoded at the server. When the user shuts down the machine or logs out of the program, the session values are automatically deleted. We must save the values in the database to keep them forever.
+
+2. Cookie :
+A cookie is a small text file that is saved on the user’s computer. The maximum file size for a cookie is 4KB. It is also known as an HTTP cookie, a web cookie, or an internet cookie. When a user first visits a website, the site sends data packets to the user’s computer in the form of a cookie.
+
+The information stored in cookies is not safe since it is kept on the client-side in a text format that anybody can see. We can activate or disable cookies based on our needs.
+
+
+Difference Between Session and Cookies :
+
+Cookie
+
+Session
+
+Cookies are client-side files on a local computer that hold user information.	Sessions are server-side files that contain user data.
+Cookies end on the lifetime set by the user.	When the user quits the browser or logs out of the programmed, the session is over.
+It can only store a certain amount of info.	It can hold an indefinite quantity of data.
+The browser’s cookies have a maximum capacity of 4 KB.	We can keep as much data as we like within a session, however there is a maximum memory restriction of 128 MB that a script may consume at one time.
+Because cookies are kept on the local computer, we don’t need to run a function to start them.	To begin the session, we must use the session start() method.
+Cookies are not secured.	Session are more secured compare than cookies.
+Cookies stored data in text file.	Session save data in encrypted form.
+Cookies stored on a limited data.	Session stored a unlimited data.
+In PHP, to get the data from Cookies , $_COOKIES the global variable is used	In PHP  , to get the data from Session, $_SESSION the global variable is used
+We can set an expiration date to delete the cookie’s data. It will automatically delete the data at that specific time. 	In PHP, to destroy or remove the data stored within a session, we can use the session_destroy() function, and to unset a specific variable, we can use the unset() function.
